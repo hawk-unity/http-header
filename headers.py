@@ -11,8 +11,6 @@ youtube: farukdeveloper.online
 #!/usr/bin/python3
 import sys
 from requests import get
-import subprocess
-import json
 url = input(" URL  (google.com)   ->   ")
 response = get('https://api.hackertarget.com/httpheaders/?q=' + url).text
 sys.stdout.write(response)
